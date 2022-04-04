@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.18.0"
+  },
+  "name": "e-commerce-back-end-by-anastasia",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiia-Ciloci/E-Commerce-Back-End-by-Anastasia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiia-Ciloci/E-Commerce-Back-End-by-Anastasia/issues"
+  },
+  "homepage": "https://github.com/Anastasiia-Ciloci/E-Commerce-Back-End-by-Anastasia#readme"
+}
