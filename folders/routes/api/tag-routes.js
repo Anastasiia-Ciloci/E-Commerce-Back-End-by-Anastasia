@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
     const tags = await Tag.findAll({
       include: [
         {
-          model: Tag,
+          model: Product,
         },
       ],
     });
@@ -28,12 +28,10 @@ router.get("/", async (req, res) => {
 // find a single tag by its `id`
 router.get("/:id", async (req, res) => {
   try {
-    const tags = await Tag.findByPk({
-      include: [
-        {
-          model: Tag,
-        },
-      ],
+    const tags = await Tag.findByPk(req.params.id, {
+      include: {
+        model: Product,
+      },
     });
 
     if (!tags) {
@@ -77,8 +75,8 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+// delete on tag by its `id` value
 router.delete("/:id", async (req, res) => {
-  // delete on tag by its `id` value
   try {
     const tags = await Tag.destroy({
       where: {
